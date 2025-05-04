@@ -1,3 +1,4 @@
+repeat task.wait()until game:IsLoaded()
 local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/discoart/FluentPlus/refs/heads/main/release.lua", true))()
 
 
@@ -13,7 +14,6 @@ local Window = Fluent:CreateWindow({
     Theme = "Dark"
 })
 
-repeat task.wait()until game:IsLoaded()
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local VirtualUser = game:GetService("VirtualUser")
 local RunService = game:GetService("RunService")
