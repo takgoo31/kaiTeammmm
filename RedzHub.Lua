@@ -1,3 +1,18 @@
+local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/discoart/FluentPlus/refs/heads/main/release.lua", true))()
+
+
+Button_Icon = "rbxassetid://137592432303285"
+              
+
+local Window = Fluent:CreateWindow({
+    Title = "Kai Hub | Blox Fruits",
+    SubTitle = "by: Kai Team",
+    TabWidth = 150,
+    Size = UDim2.fromOffset(400, 340),
+    Acrylic = false,
+    Theme = "Dark"
+})
+
 repeat task.wait()until game:IsLoaded()
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local VirtualUser = game:GetService("VirtualUser")
@@ -3553,21 +3568,6 @@ local function AutoRengoku()
     end
   end
 end
-
-local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/discoart/FluentPlus/refs/heads/main/release.lua", true))()
-
-
-Button_Icon = "rbxassetid://137592432303285"
-              
-
-local Window = Fluent:CreateWindow({
-    Title = "Kai Hub | Blox Fruits",
-    SubTitle = "by: Kai Team",
-    TabWidth = 150,
-    Size = UDim2.fromOffset(400, 340),
-    Acrylic = false,
-    Theme = "Dark"
-})
 
 local MainFarm = Window:AddTab({Title = "Farm", Icon = "home"})
 if Sea3 then
