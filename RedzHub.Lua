@@ -3554,18 +3554,19 @@ local function AutoRengoku()
   end
 end
 
-local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/lynxloader/CreatorHub_Database/main/Fluent/main.lua"))()
-local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
-local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
-local Options = Fluent.Options
+local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/discoart/FluentPlus/refs/heads/main/release.lua", true))()
+
+
+Button_Icon = "rbxassetid://137592432303285"
+              
+
 local Window = Fluent:CreateWindow({
-  Title = "Fish Hub : Blox Fruits",
-  SubTitle = "Rosie Team Lite",
-  TabWidth = 160,
-  Size = UDim2.fromOffset(580, 460),
-  Acrylic = false,
-  Theme = "Dark",
-  MinimizeKey = Enum.KeyCode.LeftControl
+    Title = "Kai Hub | Blox Fruits",
+    SubTitle = "by: Kai Team",
+    TabWidth = 150,
+    Size = UDim2.fromOffset(400, 340),
+    Acrylic = false,
+    Theme = "Dark"
 })
 
 local MainFarm = Window:AddTab({Title = "Farm", Icon = "home"})
