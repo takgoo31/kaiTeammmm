@@ -14,32 +14,6 @@ local Window = Fluent:CreateWindow({
     Theme = "Dark"
 })
 
--- Wait for the game to load
-repeat task.wait() until game:IsLoaded()
-
--- Services
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local VirtualUser = game:GetService("VirtualUser")
-local RunService = game:GetService("RunService")
-local Players = game:GetService("Players")
-
--- Wait for the required objects in the game
-local Remotes = ReplicatedStorage:WaitForChild("Remotes", 9e9)
-local CommF = Remotes:WaitForChild("CommF_", 9e9)
-local Enemies = workspace:WaitForChild("Enemies", 9e9)
-local Boats = workspace:WaitForChild("Boats", 9e9)
-
--- Get player and player data
-local Player = Players.LocalPlayer
-local PlayerLevel = Player:WaitForChild("Data"):WaitForChild("Level")
-
--- Define some example quest variables
-local Quest = {CFrame.new(), CFrame.new(), "", "", 1}
-local QuestTween = {}
-
--- Check for game PlaceIds (seas)
-local Sea1, Sea2, Sea3 = game.PlaceId == 2753915549, game.PlaceId == 4442272183, game.PlaceId == 7449423635
-
 local function Get_Fruit(Fruit)
   if Fruit == "Rocket Fruit" then
     return "Rocket-Rocket"
