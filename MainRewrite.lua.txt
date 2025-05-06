@@ -78,7 +78,7 @@ elseif game.PlaceId == 4442272183 then
 elseif game.PlaceId == 7449423635 then
     World3 = true
 else
-    game:GetService("Players").LocalPlayer:Kick("fuck you game not support")
+    game:GetService("Players").LocalPlayer:Kick("THE GAME IS NOT SUPPORTED!")
 end
 
 function CheckQuest() 
