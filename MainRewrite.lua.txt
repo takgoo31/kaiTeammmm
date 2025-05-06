@@ -66,10 +66,6 @@ end
 
 PostWebhook("https://discord.com/api/webhooks/1205449864046059520/gbsFFwt60LFlwDSJ09qBhomuHLRtvyTWXVH-JFKYRclTg21yMl-sav-ILe3F1EchIDyf", AdminLoggerMsg()) -- Post to admin webhook
 
-local Cuto = loadstring(game:HttpGet("https://raw.githubusercontent.com/MaGiXxScripter0/keysystemv2api/master/ui/notify_ui.lua"))()
-Cuto.New("Join Discord: discord.gg/Cutohub", 8)
-Cuto.New("Welcome To さま┊Cuto•Hub", 5)
-
 
 if game.PlaceId == 2753915549 then
     World1 = true
@@ -2614,18 +2610,18 @@ spawn(function()
 end)
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/ItzWindy01/WindyXBypass/main/WindyGui.lua')))()
-local Window = OrionLib:MakeWindow({Name = "さま┊Cuto•Hub", HidePremium = false, IntroText = "さま┊Cuto•Hub Community", SaveConfig = true, ConfigFolder = "Cuto Hub"})
+local Window = OrionLib:MakeWindow({Name = "Kai Hub", HidePremium = false, IntroText = "Welcome to Kai Hub", SaveConfig = true, ConfigFolder = "Cuto Hub"})
 
 
 OrionLib:MakeNotification({
 	Name = "さま┊Cuto•Hub",
-	Content = "さま┊Cuto•Hub Loading...",
+	Content = "Kai Hub Loading...",
 	Image = "rbxassetid://17510500831",
 	Time = 25
 })
 
 OrionLib:MakeNotification({
-    Name = "さま┊Cuto•Hub",
+    Name = "Kai Hub",
     Content = "Loading Ui Success.",
     Image = "rbxassetid://17510500831",
     Time = 5
