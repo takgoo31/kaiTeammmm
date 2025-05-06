@@ -2609,23 +2609,26 @@ spawn(function()
     wait(.24)
 end)
 
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/ItzWindy01/WindyXBypass/main/WindyGui.lua')))()
-local Window = OrionLib:MakeWindow({Name = "Kai Hub", HidePremium = false, IntroText = "Welcome to Kai Hub", SaveConfig = true, ConfigFolder = "Cuto Hub"})
+local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/discoart/FluentPlus/refs/heads/main/release.lua", true))()
+local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 
-
-OrionLib:MakeNotification({
-	Name = "さま┊Cuto•Hub",
-	Content = "Kai Hub Loading...",
-	Image = "rbxassetid://17510500831",
-	Time = 25
+Button_Icon = "rbxassetid://137592432303285"
+              
+local Window = Fluent:CreateWindow({
+    Title = "Kai Hub | Blox Fruits ",
+    SubTitle = "by: Kai Team",
+    TabWidth = 155,
+    Size = UDim2.fromOffset(500, 400),
+    Acrylic = false,
+    Theme = "Dark"
 })
 
-OrionLib:MakeNotification({
-    Name = "Kai Hub",
-    Content = "Loading Ui Success.",
-    Image = "rbxassetid://17510500831",
-    Time = 5
-})
+Fluent:Notify({
+        Title = "Welcome to Kai Hub!",
+        Content = "Thank you for using our script!",
+        SubContent = "https://discord.gg/wDMPK3QAmY", -- Optional, depende sainyo
+        Duration = 9 -- nil pag ayaw mo matanggal yung notif.
+    })
 
 -------------Tab-----------------------
 
