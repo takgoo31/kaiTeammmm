@@ -2,10 +2,9 @@
 -- discord.gg/umaru
 -- discord.gg/umaru
 
-local Keysystem = (loadstring(game:HttpGet("https://relzhub.farrghii.com/config/keysystem.lua")))();
 local WindUI =  loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))()
 local Window = WindUI:CreateWindow({
-	Title = "Relz Hub [ New Version ]",
+	Title = "Kai Hub ",
 	Author = "Blox Fruits",
 	Folder = "RelzHub",
 	Size = UDim2.fromOffset(520, 300),
@@ -13,16 +12,7 @@ local Window = WindUI:CreateWindow({
 	Theme = "Dark",
 	SideBarWidth = 190,
 	HasOutline = false,
-	KeySystem = {
-		Key = {
-			"discord.gg/umaru",
-			Keysystem:GetUserKey()
-		},
-		Note = "Get the key first to access the script.",
-		URL = tostring(Keysystem:GetKeyUrl()),
-		SaveKey = false
-	}
-});
+	
 Window:EditOpenButton({
 	Title = "Open",
 	CornerRadius = UDim.new(0, 10),
