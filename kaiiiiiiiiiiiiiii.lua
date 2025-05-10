@@ -1,23 +1,23 @@
-local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/Library-ui/refs/heads/main/Redzhubui"))()
-local Window = redzlib:MakeWindow({
-   Title = "Flaw Hub : Blox Fruits",
-   SubTitle = "by Kevine",
+local redzlib = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))()
+local Window = redzlib:CreateWindow({
+   Title = "Kai Hub : Blox Fruits",
+   SubTitle = "by Takgoo",
    SaveFolder = "Flaw Hub | Blox Fruits.lua"
 })
 
 local AFKOptions = {}
 
-local Discord = Window:MakeTab({"Discord", "Info"})
+local Discord = Window:Tab({"Discord", "Info"})
 Discord:AddDiscordInvite({
-   Name = "Flaw Hub | Community",
+   Name = "Kai Hub | Community",
    Description = "Join our discord community to receive information about the next
 update",
    Logo = "rbxassetid://140364812114240",
-   Invite = "https://discord.gg/ZCajeqGbmD"
+   Invite = "https://discord.gg/wDMPK3QAmY"
 })
-local MainFarm = Window:MakeTab({"Farm", "Home"})
+local MainFarm = Window:Tab({"Farm", "Home"})
 if Sea3 then
-   local AutoSea = Window:MakeTab({"Sea", "Waves"})
+   local AutoSea = Window:Tab({"Sea", "Waves"})
    AutoSea:AddSection({"Kitsune"})
    local KILabel = AutoSea:AddParagraph({"Kitsune Island : not spawn"})
    AutoSea:AddToggle({Name = "Auto Kitsune Island",Callback = function(Value)
