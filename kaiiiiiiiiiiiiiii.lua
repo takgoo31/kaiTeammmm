@@ -1,8 +1,14 @@
 local redzlib = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))()
 local Window = redzlib:CreateWindow({
    Title = "Kai Hub : Blox Fruits",
-   SubTitle = "by Takgoo",
-   SaveFolder = "Flaw Hub | Blox Fruits.lua"
+   Icon = "door-open",
+   Author = "by Takgoo",
+   Folder = "Kai Hub | Blox Fruits.lua",
+   Size = UDim2.fromOffset(580, 450),
+   Transparent = true,
+   Theme = "Dark",
+   SideBarWidth = 180,
+   Background = "",
 })
 
 local AFKOptions = {}
@@ -428,10 +434,10 @@ Callback = function(Value)
     DemonFruit = Value
   end})
 end
-local Teleport = Window:MakeTab({"Teleport", "Locate"})
-local Visual = Window:MakeTab({"Visual", "User"})
-local Shop = Window:MakeTab({"Shop", "ShoppingCart"})
-local Misc = Window:MakeTab({"Misc", "Settings"})
+local Teleport = Window:Tab({"Teleport", "Locate"})
+local Visual = Window:Tab({"Visual", "User"})
+local Shop = Window:Tab({"Shop", "ShoppingCart"})
+local Misc = Window:Tab({"Misc", "Settings"})
 
 MainFarm:AddDropdown({
    Name = "Farm Tool",
